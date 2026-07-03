@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talk Rankings</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1>AI Engineer Talk Rankings</h1>
+        <p id="meta" class="meta">Loading…</p>
+      </div>
+    </header>
+
+    <main id="grid" class="grid" aria-live="polite"></main>
+
+    <template id="card-template">
+      <article class="card">
+        <div class="rank"></div>
+        <a class="thumb-link" target="_blank" rel="noopener noreferrer">
+          <img class="thumb" alt="" loading="lazy" />
+        </a>
+        <div class="body">
+          <a class="title-link" target="_blank" rel="noopener noreferrer"></a>
+          <time class="published"></time>
+          <div class="tags"></div>
+          <div class="score-row">
+            <span class="score"></span>
+            <span class="verdict"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+You are evaluating a conference talk transcript to produce a RANKING SCORE so a viewer can sort many talks by quality. Judge intrinsic quality only — not relevance to any particular person.
+
+Inputs:
+- Title: {title}
+- Speaker(s): {speakers}
+- Transcript (timestamped): {transcript}
+
+Step 1 — Central claim(s): In 2–3 sentences, state the claim(s) the talk actually asserts. If there is no real claim (topic tour, product pitch, restatement of common knowledge), say so — this should force low Substance and Evidence scores.
+
+Step 2 — Score each dimension 0–10. Give one sentence of reasoning BEFORE the number. Judge substance, not delivery polish, length, or confident tone. Use the FULL range and decimals (e.g. 6.5) so talks separate cleanly — avoid clustering everything at 5–7.
+
+1. Substance (0–10): specificity and non-triviality of the claims.
+   0 = no real claim/pure promo · 5 = real but familiar/shallow · 10 = sharp, non-obvious, field-advancing
+2. Evidence (0–10): how well claims are backed.
+   0 = assertion/anecdote only · 5 = partial data or worked examples · 10 = strong data, results, rigorous argument
+3. Specificity (0–10): concreteness of content.
+   0 = hand-wavy throughout · 5 = mixed · 10 = concrete methods, numbers, named failure modes
+4. Insight density (0–10): how much substance per minute vs. filler/setup/repetition.
+   0 = mostly filler · 5 = a few good moments in padding · 10 = consistently dense
+5. Non-promotion (0–10): 0 = mostly selling a product/person · 10 = no promotional framing.
+
+If the transcript is too garbled to judge a dimension, score it and flag LOW-CONFIDENCE rather than skipping (a ranking needs a number).
+
+Step 3 — Composite (0–100), computed as:
+  Substance × 3.0
+  + Evidence × 2.0
+  + Specificity × 1.5
+  + Insight density × 2.5
+  + Non-promotion × 1.0
+  (max = 100)
+Show the arithmetic.
+
+Step 4 — Confidence (High/Med/Low): lower it if the talk is visual/demo-heavy (transcript understates it) or the transcript is poor. Note WHY in one phrase.
+
+Output exactly:
+- Central claim(s):
+- Substance: [reason] N
+- Evidence: [reason] N
+- Specificity: [reason] N
+- Insight density: [reason] N
+- Non-promotion: [reason] N
+- COMPOSITE: NN/100 (show arithmetic)
+- Confidence: High/Med/Low — why
+- Most substantive line (quote + timestamp):
+- Verdict: WATCH / SKIM / SKIP
