@@ -321,20 +321,23 @@ function balanceCardRows(): void {
     const cards = [...grid.querySelectorAll<HTMLElement>(".card")];
     cards.forEach((card) => {
       card.style.height = "";
-      card.classList.remove("is-measuring");
     });
 
     const collapsed = cards.filter((card) => !card.classList.contains("is-expanded"));
-    collapsed.forEach((card) => card.classList.add("is-measuring"));
+    const expandedTops = new Set(
+      cards.filter((card) => card.classList.contains("is-expanded")).map((card) => card.offsetTop),
+    );
 
     for (const row of groupCardsByRow(collapsed)) {
+      if (expandedTops.has(row[0]?.offsetTop ?? -1)) {
+        continue;
+      }
+
       const tallest = Math.max(...row.map((card) => card.offsetHeight));
       for (const card of row) {
         card.style.height = `${tallest}px`;
       }
     }
-
-    collapsed.forEach((card) => card.classList.remove("is-measuring"));
   }
 
   refreshAllSummaryStates();

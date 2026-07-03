@@ -325,20 +325,16 @@ body {
 }
 
 .card:not(.is-expanded) .summary-panel {
-  flex: 1;
-  min-height: 0;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.card.is-measuring:not(.is-expanded) .summary-panel {
   flex: none;
   max-height: calc(0.82rem * 1.4 * 3);
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .card.is-expanded .summary-panel {
   flex: none;
   min-height: 0;
+  max-height: none;
   overflow: visible;
   cursor: default;
 }
