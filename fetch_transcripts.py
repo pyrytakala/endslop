@@ -16,6 +16,7 @@ from transcript_providers import (
     default_provider_name,
     get_provider,
 )
+from youtube_metadata import fetch_youtube_upload_date
 
 
 DEFAULT_CHANNEL_URL = "https://www.youtube.com/@aiDotEngineer/videos"
@@ -75,6 +76,11 @@ def process_video(
 ) -> dict:
     metadata_payload = metadata_payload or provider.get_metadata(video_id)
     fields = provider.metadata_to_index_fields(metadata_payload)
+    if not fields.get("upload_date"):
+        try:
+            fields["upload_date"] = fetch_youtube_upload_date(video_id)
+        except Exception:
+            pass
     title = fields.get("title") or video_id
 
     result = {
@@ -164,6 +170,52 @@ def retry_missing_transcripts(
     return 0 if ok_count else 1
 
 
+def backfill_upload_dates(output_dir: Path, request_delay: float) -> int:
+    index_path = output_dir / "index.json"
+    if not index_path.exists():
+        print(f"Missing index file: {index_path}", file=sys.stderr)
+        return 1
+
+    payload = json.loads(index_path.read_text())
+    videos = payload.get("videos") or []
+    pending = [video for video in videos if not video.get("upload_date")]
+    if not pending:
+        print("All videos already have upload dates.")
+        return 0
+
+    print(f"Backfilling upload dates for {len(pending)} videos...\n")
+
+    import requests
+
+    session = requests.Session()
+    updated = 0
+    for index, video in enumerate(pending, start=1):
+        video_id = video["id"]
+        print(f"[{index}/{len(pending)}] {video['title']} ({video_id})")
+        try:
+            upload_date = fetch_youtube_upload_date(
+                video_id,
+                session=session,
+                request_delay=request_delay if index > 1 else 0.0,
+            )
+        except Exception as exc:
+            print(f"  -> failed: {exc}")
+            continue
+
+        if not upload_date:
+            print("  -> failed: upload date not found")
+            continue
+
+        video["upload_date"] = upload_date
+        updated += 1
+        print(f"  -> {upload_date}")
+
+    payload["videos"] = videos
+    index_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
+    print(f"\nDone. Updated {updated}/{len(pending)} videos in {index_path}")
+    return 0 if updated else 1
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fetch YouTube transcripts and metadata via a transcript provider."
@@ -227,16 +279,24 @@ def main() -> int:
         action="store_true",
         help="Disable transcript provider API response cache",
     )
+    parser.add_argument(
+        "--backfill-upload-dates",
+        action="store_true",
+        help="Fill missing upload_date values in transcripts/index.json from YouTube",
+    )
     args = parser.parse_args()
+
+    output_dir = args.output_dir
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.backfill_upload_dates:
+        return backfill_upload_dates(output_dir, args.request_delay)
 
     try:
         provider = get_provider(args.provider, use_cache=not args.no_cache)
     except TranscriptProviderError as exc:
         print(exc, file=sys.stderr)
         return 1
-
-    output_dir = args.output_dir
-    output_dir.mkdir(parents=True, exist_ok=True)
 
     if args.retry_transcripts or args.refresh_transcripts:
         return retry_missing_transcripts(

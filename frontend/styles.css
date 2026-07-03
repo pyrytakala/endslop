@@ -116,6 +116,13 @@ body {
   overflow: hidden;
 }
 
+.talk-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
 .title-link {
   color: var(--text);
   text-decoration: none;
@@ -239,6 +246,12 @@ body {
 .published {
   color: var(--muted);
   font-size: 0.82rem;
+  line-height: 1.3;
+  flex-shrink: 0;
+}
+
+.published[hidden] {
+  display: none;
 }
 
 .tags {
