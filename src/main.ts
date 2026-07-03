@@ -1,7 +1,9 @@
 import "./styles.css";
 import type { RankedVideo, RankingsPayload, Tag } from "./types";
 
-const RANKINGS_URL = import.meta.env.DEV ? "/api/rankings" : "/data/rankings.json";
+const RANKINGS_URL = import.meta.env.DEV
+  ? "/api/rankings"
+  : `${import.meta.env.BASE_URL}data/rankings.json`;
 
 function thumbnailUrl(videoId: string): string {
   return `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
