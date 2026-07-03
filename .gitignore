@@ -23,6 +23,7 @@ dist/
 .DS_Store
 .cursor/
 .vercel
+.netlify
 
 # Logs
 *.log
