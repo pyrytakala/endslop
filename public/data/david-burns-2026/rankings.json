@@ -1,8 +1,162 @@
 {
   "source_id": "david-burns-2026",
-  "video_count": 0,
-  "scored_count": 0,
-  "ranked_count": 0,
-  "rankings": [],
+  "model": "accounts/fireworks/models/deepseek-v4-flash",
+  "video_count": 4,
+  "scored_count": 4,
+  "ranked_count": 4,
+  "rankings": [
+    {
+      "id": "7doQST-0puc",
+      "title": "Why Criticism Can NEVER Hurt You",
+      "speakers": "Feeling Great",
+      "url": "https://www.youtube.com/watch?v=7doQST-0puc",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 4899,
+      "summary_bullets": [
+        "Criticism only hurts through your thoughts.",
+        "Disarming technique: agree with truth in criticism.",
+        "Five secrets of effective communication.",
+        "Practice with Feeling Great app.",
+        "Law of opposites: defending proves criticism true."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Why Criticism Can NEVER Hurt You",
+      "substance": 6,
+      "evidence": 3,
+      "specificity": 7,
+      "insight_density": 5.5,
+      "non_promotion": 7.5,
+      "practical_utility": 8,
+      "composite": 61.25,
+      "like_count": null,
+      "upload_date": "20260121",
+      "duration_seconds": 1672,
+      "composite_base": 61.25,
+      "rank": 1,
+      "tags": [
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "iE-H4Z1plf8",
+      "title": "Your Procrastination Cure",
+      "speakers": "Feeling Great",
+      "url": "https://www.youtube.com/watch?v=iE-H4Z1plf8",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 18142,
+      "summary_bullets": [
+        "Paradoxical approach: persuade to keep procrastinating",
+        "Triple Paradox lists benefits of procrastination",
+        "Break tasks into 5 steps under 1 minute each",
+        "Five-minute rule with accountability check-in",
+        "Therapist must resist helping to avoid worsening resistance"
+      ],
+      "confidence": "High",
+      "audience_level": "practitioner",
+      "display_title": "Your Procrastination Cure",
+      "substance": 7.5,
+      "evidence": 3,
+      "specificity": 9,
+      "insight_density": 6,
+      "non_promotion": 2,
+      "practical_utility": 7,
+      "composite": 54.9,
+      "like_count": null,
+      "upload_date": "20260304",
+      "duration_seconds": 6507,
+      "composite_base": 62.75,
+      "rank": 2,
+      "tags": [
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -7.85
+    },
+    {
+      "id": "gRDDzm7KtQo",
+      "title": "When Someone Stubbornly Refuses to Talk",
+      "speakers": "Feeling Great",
+      "url": "https://www.youtube.com/watch?v=gRDDzm7KtQo",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 2138,
+      "summary_bullets": [
+        "Blame yourself to get silent person talking.",
+        "Teen with anorexia opened up after self-blame.",
+        "Violent teen Billy disarmed by honest admission.",
+        "Technique requires ego death and honesty.",
+        "Success rate near 100% but hard to execute."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "When Someone Stubbornly Refuses to Talk",
+      "substance": 6,
+      "evidence": 2,
+      "specificity": 7,
+      "insight_density": 5,
+      "non_promotion": 2,
+      "practical_utility": 6,
+      "composite": 51,
+      "like_count": null,
+      "upload_date": "20260114",
+      "duration_seconds": 712,
+      "composite_base": 51,
+      "rank": 3,
+      "tags": [],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "vRNG9tOVp3U",
+      "title": "From Emotional Hell to Enlightenment: Live Therapy with David and Jill",
+      "speakers": "Feeling Great",
+      "url": "https://www.youtube.com/watch?v=vRNG9tOVp3U",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 27436,
+      "summary_bullets": [
+        "Live TEAM CBT therapy demonstration",
+        "Volunteer Haral from India works on self-criticism",
+        "Uses daily mood log, positive reframing, externalization",
+        "Dramatic mood improvement in single session",
+        "Includes empathy grading and resistance assessment"
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "From Emotional Hell to Enlightenment: Live Therapy with David and Jill",
+      "substance": 7.5,
+      "evidence": 5.5,
+      "specificity": 9,
+      "insight_density": 6,
+      "non_promotion": 7,
+      "practical_utility": 4,
+      "composite": 46.87,
+      "like_count": null,
+      "upload_date": "20260128",
+      "duration_seconds": 10577,
+      "composite_base": 61.5,
+      "rank": 4,
+      "tags": [
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -14.63
+    }
+  ],
+  "too_long": [],
   "other": []
 }

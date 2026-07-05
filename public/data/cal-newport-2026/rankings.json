@@ -1,8 +1,640 @@
 {
   "source_id": "cal-newport-2026",
-  "video_count": 0,
-  "scored_count": 0,
-  "ranked_count": 0,
-  "rankings": [],
+  "model": "accounts/fireworks/models/deepseek-v4-flash",
+  "video_count": 15,
+  "scored_count": 15,
+  "ranked_count": 15,
+  "rankings": [
+    {
+      "id": "5GezB1XyiQo",
+      "title": "Is AI About to “Eat Everything”? (It’s Not.)",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=5GezB1XyiQo",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 6187,
+      "summary_bullets": [
+        "METR chart measures AI coding task difficulty, not general intelligence.",
+        "AI coding gains come from post-training and hand-coded harnesses.",
+        "Progress in coding does not imply AI will \"eat everything\".",
+        "AI companies should distance from transhumanist hype."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Is AI About to “Eat Everything”? (It’s Not.)",
+      "substance": 8.5,
+      "evidence": 8,
+      "specificity": 9,
+      "insight_density": 7.5,
+      "non_promotion": 10,
+      "practical_utility": 7,
+      "composite": 79.56,
+      "like_count": null,
+      "upload_date": "20260514",
+      "duration_seconds": 1911,
+      "composite_base": 79.75,
+      "rank": 1,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -0.19
+    },
+    {
+      "id": "3Qch7wmeySY",
+      "title": "Can This Simple Change Save My Distracted Brain?",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=3Qch7wmeySY",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 8093,
+      "summary_bullets": [
+        "Two-week mobile internet block improves attention.",
+        "Study: blocking internet on phone cuts screen time by half.",
+        "Four mediators: offline activities, social interaction, sleep, self-control.",
+        "Only 25.5% of participants remained compliant.",
+        "Advice: block precisely, strengthen controls, lean into boredom."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Can This Simple Change Save My Distracted Brain?",
+      "substance": 7.5,
+      "evidence": 8.5,
+      "specificity": 9,
+      "insight_density": 7.5,
+      "non_promotion": 8,
+      "practical_utility": 8.5,
+      "composite": 79.45,
+      "like_count": null,
+      "upload_date": "20260511",
+      "duration_seconds": 2582,
+      "composite_base": 80.75,
+      "rank": 2,
+      "tags": [
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -1.3
+    },
+    {
+      "id": "mbxuS6wlVR0",
+      "title": "Are We About to Lose Control of AI? (*sighs*)",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=mbxuS6wlVR0",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 3717,
+      "summary_bullets": [
+        "Anthropic report warns of recursive self-improvement.",
+        "Cal Newport argues fears are overblown.",
+        "Faster coding does not equal smarter AI.",
+        "Coding harnesses are controllable, not black boxes.",
+        "AI coding tools increase output but not innovation."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Are We About to Lose Control of AI? (*sighs*)",
+      "substance": 8.5,
+      "evidence": 7,
+      "specificity": 9,
+      "insight_density": 8,
+      "non_promotion": 8,
+      "practical_utility": 6.5,
+      "composite": 77,
+      "like_count": null,
+      "upload_date": "20260611",
+      "duration_seconds": 1238,
+      "composite_base": 77,
+      "rank": 3,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "SOKfVVOq-Ck",
+      "title": "Has AI Conquered Coding? (It’s Not So Simple…)",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=SOKfVVOq-Ck",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 2154,
+      "summary_bullets": [
+        "AI coding agents cause skill atrophy in developers.",
+        "Senior devs lose ability to review generated code.",
+        "Junior devs never learn to code without AI.",
+        "Fay proposes demoting AI to secondary role.",
+        "Developers should write code themselves for important tasks."
+      ],
+      "confidence": "High",
+      "audience_level": "practitioner",
+      "display_title": "Has AI Conquered Coding? (It’s Not So Simple…)",
+      "substance": 7.5,
+      "evidence": 5,
+      "specificity": 8,
+      "insight_density": 7.5,
+      "non_promotion": 10,
+      "practical_utility": 8.5,
+      "composite": 75.5,
+      "like_count": null,
+      "upload_date": "20260521",
+      "duration_seconds": 754,
+      "composite_base": 75.5,
+      "rank": 4,
+      "tags": [
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "neqxcy2BdvU",
+      "title": "Is the AI Doom Fever Breaking? (It’s About Time!)",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=neqxcy2BdvU",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 4744,
+      "summary_bullets": [
+        "AI CEOs shift from apocalyptic rhetoric.",
+        "Cal Newport analyzes cultural roots in rationalism.",
+        "X-risk community influenced AI company culture.",
+        "Public opinion turning against AI companies.",
+        "Wall Street pressure may moderate CEO claims."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Is the AI Doom Fever Breaking? (It’s About Time!)",
+      "substance": 8.5,
+      "evidence": 6,
+      "specificity": 8,
+      "insight_density": 7.5,
+      "non_promotion": 10,
+      "practical_utility": 6,
+      "composite": 73.25,
+      "like_count": null,
+      "upload_date": "20260507",
+      "duration_seconds": 1591,
+      "composite_base": 73.25,
+      "rank": 5,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "wvylrFJXOZA",
+      "title": "How Do I Fix My Motivation System?",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=wvylrFJXOZA",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 16387,
+      "summary_bullets": [
+        "Digital addiction shares brain mechanisms with substance addiction.",
+        "Four C's: control, compulsion, craving, consequences.",
+        "Teenagers especially vulnerable due to developing brains.",
+        "Self-binding strategies and 12-step groups like ITAA help.",
+        "Parents should delay smartphones until at least age 16."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Digital Addiction: Neuroscience, Warning Signs, and Recovery Strategies",
+      "substance": 8.5,
+      "evidence": 6.5,
+      "specificity": 9,
+      "insight_density": 7.5,
+      "non_promotion": 6,
+      "practical_utility": 8,
+      "composite": 72.33,
+      "like_count": null,
+      "upload_date": "20260518",
+      "duration_seconds": 5199,
+      "composite_base": 78,
+      "rank": 6,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -5.67
+    },
+    {
+      "id": "I49_welTdpc",
+      "title": "Was the Mythos Ban Justified? (Good Idea. Bad Execution.)",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=I49_welTdpc",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 5664,
+      "summary_bullets": [
+        "Anthropic's Mythos model banned by US government.",
+        "Cal argues Mythos is not revolutionary for bug finding.",
+        "Guardrails on Fable 5 are easily jailbroken.",
+        "Government should require pre-release safety reviews.",
+        "AI companies' scare tactics cause psychological harm."
+      ],
+      "confidence": "High",
+      "audience_level": "practitioner",
+      "display_title": "Was the Mythos Ban Justified? (Good Idea. Bad Execution.)",
+      "substance": 7.5,
+      "evidence": 6,
+      "specificity": 8.5,
+      "insight_density": 7,
+      "non_promotion": 9,
+      "practical_utility": 6.5,
+      "composite": 71,
+      "like_count": null,
+      "upload_date": "20260617",
+      "duration_seconds": 1766,
+      "composite_base": 71,
+      "rank": 7,
+      "tags": [
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "fhZRWZ6J4k4",
+      "title": "Did AI Just “Solve” Math? (Let’s Take a Closer Look)",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=fhZRWZ6J4k4",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 6097,
+      "summary_bullets": [
+        "OpenAI claimed LLM disproved Erdos's 80-year-old conjecture.",
+        "Humans extracted idea from LLM's long chain-of-thought.",
+        "Result is important but not a sign of superhuman AI.",
+        "AI math tools are narrow, not general intelligence.",
+        "Cal argues AI should be treated as normal technology."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Did AI Just “Solve” Math? (Let’s Take a Closer Look)",
+      "substance": 7.5,
+      "evidence": 8,
+      "specificity": 9,
+      "insight_density": 7,
+      "non_promotion": 9,
+      "practical_utility": 5,
+      "composite": 70.57,
+      "like_count": null,
+      "upload_date": "20260528",
+      "duration_seconds": 1909,
+      "composite_base": 70.75,
+      "rank": 8,
+      "tags": [
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -0.18
+    },
+    {
+      "id": "o5-kQ29Vo4c",
+      "title": "How Do I Stop Wasting Time?",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=o5-kQ29Vo4c",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 18636,
+      "summary_bullets": [
+        "Time scarcity is often a mindset issue.",
+        "People have more free time than they think.",
+        "Weekly planning and house rules reduce chaos.",
+        "Small steps enable big goals over time.",
+        "Intentional leisure crowds out low-quality screen time."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "How Do I Stop Wasting Time?",
+      "substance": 7.5,
+      "evidence": 5.5,
+      "specificity": 8,
+      "insight_density": 8,
+      "non_promotion": 6,
+      "practical_utility": 8.5,
+      "composite": 69.55,
+      "like_count": null,
+      "upload_date": "20260525",
+      "duration_seconds": 5220,
+      "composite_base": 75.25,
+      "rank": 9,
+      "tags": [
+        {
+          "label": "Insight",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -5.7
+    },
+    {
+      "id": "rsAay1tB1Q8",
+      "title": "How Do I Become AI-Proof?",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=rsAay1tB1Q8",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 9621,
+      "summary_bullets": [
+        "AI may make knowledge work miserable, not replace jobs.",
+        "Pseudo-productivity (visible busyness) is the root problem.",
+        "Digital tech and AI accelerate busyness into a \"busyness singularity.\"",
+        "Five tactics: weekly planning, portfolio, avoid AI tasks, upskill, write well.",
+        "Managers can use transparent workloads and docket clearing."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "How Do I Become AI-Proof?",
+      "substance": 8.5,
+      "evidence": 5.5,
+      "specificity": 8,
+      "insight_density": 6,
+      "non_promotion": 4,
+      "practical_utility": 7.5,
+      "composite": 68.35,
+      "like_count": null,
+      "upload_date": "20260601",
+      "duration_seconds": 2937,
+      "composite_base": 70.25,
+      "rank": 10,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -1.9
+    },
+    {
+      "id": "ISXAmyZi_-Y",
+      "title": "Are You Too Busy to Think? | The Case for Pressing Pause",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=ISXAmyZi_-Y",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 6645,
+      "summary_bullets": [
+        "Pressing pause boosts cognitive capacity and insight.",
+        "Three benefits: less context shifting, novel environments, distance from present.",
+        "Four levels of pause: coffee shop loop to full escape.",
+        "Systematic journaling: gratitude, stuck areas, radical to practical solutions.",
+        "Also answers listener questions on email, reading, and thinking."
+      ],
+      "audience_level": "general",
+      "display_title": "Are You Too Busy to Think? | The Case for Pressing Pause",
+      "substance": 6.5,
+      "evidence": 4,
+      "specificity": 8.5,
+      "insight_density": 6,
+      "non_promotion": 7,
+      "practical_utility": 8,
+      "composite": 65.94,
+      "like_count": null,
+      "upload_date": "20260608",
+      "duration_seconds": 1987,
+      "composite_base": 66.25,
+      "rank": 11,
+      "tags": [
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -0.31
+    },
+    {
+      "id": "Q9wUSB792zI",
+      "title": "Are You Lazy or Just Overstimulated?",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=Q9wUSB792zI",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 11423,
+      "summary_bullets": [
+        "Overstimulation ≠ laziness; it's context-switching fatigue.",
+        "Dopamine downregulation reduces ability to focus.",
+        "Quick fixes (e.g., morning detox) are insufficient.",
+        "Permanent reduction of stimulation is the real solution."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Are You Lazy or Just Overstimulated?",
+      "substance": 7.5,
+      "evidence": 6,
+      "specificity": 7,
+      "insight_density": 6.5,
+      "non_promotion": 6,
+      "practical_utility": 7,
+      "composite": 65.45,
+      "like_count": null,
+      "upload_date": "20260622",
+      "duration_seconds": 3479,
+      "composite_base": 68.25,
+      "rank": 12,
+      "tags": [],
+      "like_adjustment": 0,
+      "length_adjustment": -2.8
+    },
+    {
+      "id": "cQKo5KCjF5A",
+      "title": "How to Be a Digital Minimalist in 2026",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=cQKo5KCjF5A",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 12379,
+      "summary_bullets": [
+        "Reviews six digital minimalism strategies from Reddit.",
+        "Grades each strategy (A, B, C) with reasoning.",
+        "Proposes three missing chapters for updated book.",
+        "Includes listener questions and baseball movie critique."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "How to Be a Digital Minimalist in 2026",
+      "substance": 7.5,
+      "evidence": 6,
+      "specificity": 8.5,
+      "insight_density": 5.5,
+      "non_promotion": 7,
+      "practical_utility": 7,
+      "composite": 65.27,
+      "like_count": null,
+      "upload_date": "20260629",
+      "duration_seconds": 3589,
+      "composite_base": 68.25,
+      "rank": 13,
+      "tags": [
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -2.98
+    },
+    {
+      "id": "TysSSPh5okI",
+      "title": "Do I Need a “Brain Gym”?",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=TysSSPh5okI",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 11342,
+      "summary_bullets": [
+        "Proposes tiered cognitive fitness system",
+        "Moderate: read, write, thinking walks, etc.",
+        "Serious: immersive thinking, point system",
+        "Predicts future industry: trainers, courses, endurance tests"
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Do I Need a “Brain Gym”?",
+      "substance": 7,
+      "evidence": 5,
+      "specificity": 8,
+      "insight_density": 6,
+      "non_promotion": 8,
+      "practical_utility": 7,
+      "composite": 63.66,
+      "like_count": null,
+      "upload_date": "20260615",
+      "duration_seconds": 3505,
+      "composite_base": 66.5,
+      "rank": 14,
+      "tags": [],
+      "like_adjustment": 0,
+      "length_adjustment": -2.84
+    },
+    {
+      "id": "aHxwZEXHwps",
+      "title": "Dear AI Companies: Stop the “Doom Trolling”",
+      "speakers": "Cal Newport",
+      "url": "https://www.youtube.com/watch?v=aHxwZEXHwps",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 4009,
+      "summary_bullets": [
+        "AI companies use fear-mongering about existential risks.",
+        "Cal Newport calls this “doom trolling” morally indefensible.",
+        "He argues companies either believe risks or are cynical.",
+        "Suggests ignoring future AI predictions, focus on current products.",
+        "Encourages using term “doom trolling” to undermine strategy."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Dear AI Companies: Stop the “Doom Trolling”",
+      "substance": 7.5,
+      "evidence": 5.5,
+      "specificity": 7,
+      "insight_density": 6.5,
+      "non_promotion": 4,
+      "practical_utility": 5,
+      "composite": 61.5,
+      "like_count": null,
+      "upload_date": "20260625",
+      "duration_seconds": 1325,
+      "composite_base": 61.5,
+      "rank": 15,
+      "tags": [],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    }
+  ],
+  "too_long": [],
   "other": []
 }

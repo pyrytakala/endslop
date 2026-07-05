@@ -1,8 +1,478 @@
 {
   "source_id": "barbell-medicine-2026",
-  "video_count": 0,
-  "scored_count": 0,
-  "ranked_count": 0,
-  "rankings": [],
+  "model": "accounts/fireworks/models/deepseek-v4-flash",
+  "video_count": 9,
+  "scored_count": 9,
+  "ranked_count": 9,
+  "rankings": [
+    {
+      "id": "T7y5exPDHio",
+      "title": "The Cortisol Myth in Menopause",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=T7y5exPDHio",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 3450,
+      "summary_bullets": [
+        "Cortisol spikes from exercise are normal.",
+        "Chronic high cortisol is Cushing's disease.",
+        "Calorie deficit does not raise cortisol long-term.",
+        "\"Adrenal fatigue\" is not a real diagnosis.",
+        "Menopause weight gain is due to estrogen loss."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "The Cortisol Myth in Menopause",
+      "substance": 8.5,
+      "evidence": 9,
+      "specificity": 9.5,
+      "insight_density": 9,
+      "non_promotion": 10,
+      "practical_utility": 7,
+      "composite": 84.75,
+      "like_count": null,
+      "upload_date": "20260630",
+      "duration_seconds": 1048,
+      "composite_base": 84.75,
+      "rank": 1,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "GZS9QeJ39zY",
+      "title": "Does Menopause Really Cause Weight Gain? What the Data Says",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=GZS9QeJ39zY",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 4690,
+      "summary_bullets": [
+        "Menopause adds ~1.5 kg fat, not main cause.",
+        "Visceral fat increases 40% during transition.",
+        "Metabolism does not crash at menopause.",
+        "Waist circumference more useful than weight.",
+        "MHT not effective for weight loss directly."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Does Menopause Really Cause Weight Gain? What the Data Says",
+      "substance": 8.5,
+      "evidence": 9,
+      "specificity": 9.5,
+      "insight_density": 8.5,
+      "non_promotion": 8,
+      "practical_utility": 7,
+      "composite": 82.75,
+      "like_count": null,
+      "upload_date": "20260702",
+      "duration_seconds": 1484,
+      "composite_base": 82.75,
+      "rank": 2,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "CoaNrxFQHJg",
+      "title": "The Menopause “You Can’t Build Muscle” Myth, Tested",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=CoaNrxFQHJg",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 2813,
+      "audience_level": "general",
+      "display_title": "The Menopause “You Can’t Build Muscle” Myth, Tested",
+      "substance": 8.5,
+      "evidence": 9,
+      "specificity": 9.5,
+      "insight_density": 9,
+      "non_promotion": 9.5,
+      "practical_utility": 6,
+      "composite": 82,
+      "like_count": null,
+      "upload_date": "20260702",
+      "duration_seconds": 894,
+      "composite_base": 82,
+      "rank": 3,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "5jApukGMu7E",
+      "title": "The #1 Thing That Lowers Death Risk After Menopause (Not Hormones)",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=5jApukGMu7E",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 4315,
+      "summary_bullets": [
+        "Fitness lowers death risk more than hormones.",
+        "Cardiorespiratory fitness: 13% mortality drop per MET.",
+        "Muscle power predicts mortality better than strength.",
+        "Combining aerobic and resistance training cuts risk 40%.",
+        "Most benefit from moving out of lowest fitness level."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "The #1 Thing That Lowers Death Risk After Menopause (Not Hormones)",
+      "substance": 8.5,
+      "evidence": 9,
+      "specificity": 9.5,
+      "insight_density": 9,
+      "non_promotion": 9,
+      "practical_utility": 6,
+      "composite": 81.75,
+      "like_count": null,
+      "upload_date": "20260625",
+      "duration_seconds": 1322,
+      "composite_base": 81.75,
+      "rank": 4,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "YD1a5Gpu1PU",
+      "title": "GLP-1 Muscle Loss and Creatine, Bulking Myths & How Fast You Lose Gains",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=YD1a5Gpu1PU",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 9521,
+      "summary_bullets": [
+        "GLP-1s cause less muscle loss than DEXA suggests.",
+        "Creatine on GLP-1s unstudied; effect likely small.",
+        "Bulking vs main-gaining depends on health and preferences.",
+        "One hour/week training: prioritize compound lifts and HIIT.",
+        "Strength lost before size; detraining depends on cause."
+      ],
+      "confidence": "High",
+      "audience_level": "practitioner",
+      "display_title": "GLP-1 Muscle Loss and Creatine, Bulking Myths & How Fast You Lose Gains",
+      "substance": 8.5,
+      "evidence": 8,
+      "specificity": 9,
+      "insight_density": 8.5,
+      "non_promotion": 8,
+      "practical_utility": 7,
+      "composite": 78.79,
+      "like_count": null,
+      "upload_date": "20260703",
+      "duration_seconds": 2977,
+      "composite_base": 80.75,
+      "rank": 5,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -1.96
+    },
+    {
+      "id": "ZlZClNYMULQ",
+      "title": "Direct Line (Free): GLP-1 Muscle Loss and Creatine, Bulking vs Cutting, One-Hour Training, & Detr...",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=ZlZClNYMULQ",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 11259,
+      "summary_bullets": [
+        "GLP-1s cause muscle loss; resistance training halves it.",
+        "Creatine on GLP-1s unstudied; effect likely small.",
+        "Bulking vs. main-gaining depends on health and preferences.",
+        "One-hour weekly training: maximize load with compounds and HIIT.",
+        "Detraining: strength lost before size; muscle memory exists."
+      ],
+      "confidence": "High",
+      "audience_level": "practitioner",
+      "display_title": "Direct Line (Free): GLP-1 Muscle Loss and Creatine, Bulking vs Cutting, One-Hour Training, & Detr...",
+      "substance": 8.5,
+      "evidence": 8,
+      "specificity": 9,
+      "insight_density": 5.5,
+      "non_promotion": 3,
+      "practical_utility": 8.5,
+      "composite": 73.22,
+      "like_count": null,
+      "upload_date": "20260703",
+      "duration_seconds": 3469,
+      "composite_base": 76,
+      "rank": 6,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -2.78
+    },
+    {
+      "id": "VvO__3dS9sU",
+      "title": "Menopause Part 4: Training, Protein, Cortisol, Hormone Therapy, & Bone Density",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=VvO__3dS9sU",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 21966,
+      "summary_bullets": [
+        "Postmenopausal women gain strength similarly to premenopausal.",
+        "Heavy resistance training improves bone density safely.",
+        "Cortisol claims about exercise are overstated.",
+        "No menopause-specific training program needed.",
+        "Protein needs not higher than general recommendations."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Menopause Part 4: Training, Protein, Cortisol, Hormone Therapy, & Bone Density",
+      "substance": 8.5,
+      "evidence": 9,
+      "specificity": 9,
+      "insight_density": 7.5,
+      "non_promotion": 4,
+      "practical_utility": 8,
+      "composite": 72.66,
+      "like_count": null,
+      "upload_date": "20260626",
+      "duration_seconds": 6654,
+      "composite_base": 80.75,
+      "rank": 7,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Utility",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -8.09
+    },
+    {
+      "id": "0vNFhxw-Yrw",
+      "title": "What Menopause Does to Your Cholesterol and Heart Risk",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=0vNFhxw-Yrw",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 2211,
+      "summary_bullets": [
+        "Menopause raises LDL and ApoB beyond aging.",
+        "Visceral fat drives metabolic syndrome, not hormones directly.",
+        "Blood pressure rise tracks aging, not menopause itself.",
+        "Hormone therapy ineffective for lipid changes.",
+        "Early menopause (<40) is a major risk factor."
+      ],
+      "confidence": "High",
+      "audience_level": "practitioner",
+      "display_title": "What Menopause Does to Your Cholesterol and Heart Risk",
+      "substance": 7.5,
+      "evidence": 8,
+      "specificity": 9,
+      "insight_density": 8.5,
+      "non_promotion": 10,
+      "practical_utility": 4,
+      "composite": 71.75,
+      "like_count": null,
+      "upload_date": "20260629",
+      "duration_seconds": 711,
+      "composite_base": 71.75,
+      "rank": 8,
+      "tags": [
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    },
+    {
+      "id": "JhCCVQDNcgs",
+      "title": "Menopause & Strength Training: What Actually Works (The Evidence) I Part IV",
+      "speakers": "Barbell Medicine",
+      "url": "https://www.youtube.com/watch?v=JhCCVQDNcgs",
+      "status": "ok",
+      "cache_hit": false,
+      "word_count": 20636,
+      "summary_bullets": [
+        "Menopause doesn't require special training protocols.",
+        "Heavy lifting is safe and effective for bone density.",
+        "Cortisol myths are overblown; exercise doesn't raise it pathologically.",
+        "Standard strength training works as well post-menopause.",
+        "Supplements and proprietary programs are mostly marketing."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "Menopause & Strength Training: What Actually Works (The Evidence) I Part IV",
+      "substance": 8.5,
+      "evidence": 9,
+      "specificity": 9.5,
+      "insight_density": 8,
+      "non_promotion": 9,
+      "practical_utility": 1,
+      "composite": 59.89,
+      "like_count": null,
+      "upload_date": "20260626",
+      "duration_seconds": 6218,
+      "composite_base": 67.25,
+      "rank": 9,
+      "tags": [
+        {
+          "label": "Substance",
+          "tone": "positive"
+        },
+        {
+          "label": "Evidence",
+          "tone": "positive"
+        },
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        },
+        {
+          "label": "Insight",
+          "tone": "positive"
+        },
+        {
+          "label": "Non-promo",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -7.36
+    }
+  ],
+  "too_long": [],
   "other": []
 }

@@ -1,8 +1,83 @@
 {
   "source_id": "ramit-sethi-2026",
-  "video_count": 0,
-  "scored_count": 0,
-  "ranked_count": 0,
-  "rankings": [],
+  "model": "accounts/fireworks/models/deepseek-v4-flash",
+  "video_count": 2,
+  "scored_count": 2,
+  "ranked_count": 2,
+  "rankings": [
+    {
+      "id": "HbxW8UhyMXE",
+      "title": "“I make 2x more than him. He feels ashamed”",
+      "speakers": "I Will Teach You To Be Rich",
+      "url": "https://www.youtube.com/watch?v=HbxW8UhyMXE",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 15477,
+      "summary_bullets": [
+        "Couple with income disparity: Maria earns double Andre.",
+        "Andre feels shame as lower-earning man.",
+        "Maria plans retirement; Andre has minimal savings.",
+        "Ramit coaches them on combining finances and planning.",
+        "They project $1.53M retirement with Andre's career growth."
+      ],
+      "confidence": "High",
+      "audience_level": "general",
+      "display_title": "I make 2x more than him. He feels ashamed",
+      "substance": 5.5,
+      "evidence": 7,
+      "specificity": 8.5,
+      "insight_density": 6,
+      "non_promotion": 3,
+      "practical_utility": 6.5,
+      "composite": 57.1,
+      "like_count": null,
+      "upload_date": "20260630",
+      "duration_seconds": 5038,
+      "composite_base": 62.5,
+      "rank": 1,
+      "tags": [
+        {
+          "label": "Specificity",
+          "tone": "positive"
+        }
+      ],
+      "like_adjustment": 0,
+      "length_adjustment": -5.4
+    },
+    {
+      "id": "Uro72blnMh8",
+      "title": "How People Lose Thousands Chasing One Big Win",
+      "speakers": "I Will Teach You To Be Rich",
+      "url": "https://www.youtube.com/watch?v=Uro72blnMh8",
+      "status": "ok",
+      "cache_hit": true,
+      "word_count": 4336,
+      "summary_bullets": [
+        "Gambling disguised as investing leads to losses.",
+        "Options trading and prediction markets are gambling.",
+        "Young men are targeted by gambling apps.",
+        "Financial infidelity often accompanies gambling addiction.",
+        "Automate boring index-fund investing instead."
+      ],
+      "audience_level": "general",
+      "display_title": "How People Lose Thousands Chasing One Big Win",
+      "substance": 6,
+      "evidence": 4,
+      "specificity": 7.5,
+      "insight_density": 5.5,
+      "non_promotion": 4,
+      "practical_utility": 5,
+      "composite": 54,
+      "like_count": null,
+      "upload_date": "20260702",
+      "duration_seconds": 1394,
+      "composite_base": 54,
+      "rank": 2,
+      "tags": [],
+      "like_adjustment": 0,
+      "length_adjustment": 0
+    }
+  ],
+  "too_long": [],
   "other": []
 }
