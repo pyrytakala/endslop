@@ -1,5 +1,6 @@
 import Parser from "rss-parser";
 
+import { art19EpisodeUrl, itunesDurationToSeconds } from "./audio-transcribe.js";
 import { rssPubDateToUploadDate, uploadDateFromUrlPath } from "./dates.js";
 import type { ContentListItem } from "./types.js";
 
@@ -61,16 +62,27 @@ function feedItemsFromParsed(feed: Parser.Output<Record<string, unknown>>): Cont
     const encoded = (entry as { contentEncoded?: string }).contentEncoded;
     const bodySource = encoded ?? entry.content ?? null;
     const body = bodySource ? htmlToPlainText(bodySource) : null;
-    const itunesEpisode = (entry as { itunes?: { episode?: string } }).itunes?.episode;
+    const itunes = (entry as { itunes?: { episode?: string; duration?: string } }).itunes;
+    const itunesEpisode = itunes?.episode;
+    const audioUrl =
+      enclosureUrl?.startsWith("http") && /\.(mp3|m4a)(\?|$)/i.test(enclosureUrl)
+        ? enclosureUrl
+        : undefined;
+    const pageUrl =
+      audioUrl && (!link.startsWith("http") || /\.(mp3|m4a)(\?|$)/i.test(link))
+        ? (art19EpisodeUrl(audioUrl) ?? link)
+        : link;
 
     items.push({
-      id: itunesEpisode ?? itemIdFromUrl(link) ?? itemIdFromTitle(title),
+      id: itunesEpisode ?? itemIdFromUrl(pageUrl) ?? itemIdFromTitle(title),
       title,
-      url: link,
+      url: pageUrl,
       upload_date:
-        rssPubDateToUploadDate(entry.pubDate ?? entry.isoDate) ?? uploadDateFromUrlPath(link),
+        rssPubDateToUploadDate(entry.pubDate ?? entry.isoDate) ?? uploadDateFromUrlPath(pageUrl),
       description: entry.contentSnippet ?? entry.content ?? null,
       body,
+      duration_seconds: itunesDurationToSeconds(itunes?.duration),
+      audioUrl,
     });
   }
 

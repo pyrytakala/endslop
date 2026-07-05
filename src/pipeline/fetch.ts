@@ -478,19 +478,32 @@ export async function runFetch(argv: string[]): Promise<number> {
     : "days" in listWindow && listWindow.days != null
       ? `${listWindow.days} day(s)`
       : `${listWindow.months ?? 2} month(s)`;
-  const listWithYtDlp = argv.includes("--list-with-ytdlp");
+  const listWithApi = argv.includes("--list-with-api");
   stageLog("fetch", `listing videos for ${source.title}`, {
     sourceId: source.id,
     window: windowLabel,
     provider: provider.name,
-    method: source.dateRange && !listWithYtDlp ? "api" : "yt-dlp",
+    method: source.dateRange && !listWithApi ? "yt-dlp" : listWithApi ? "api" : "yt-dlp",
   });
 
   let effectiveDateRange = source.dateRange;
   let videoIds: Array<[string, Record<string, unknown>]>;
   const listTimer = new StageTimer("fetch", `list ${source.id}`);
   try {
-    if (source.dateRange && !listWithYtDlp) {
+    if (source.dateRange && !listWithApi) {
+      videoIds = listChannelVideosWithYtDlp(channelUrl, {
+        dateRange: source.dateRange,
+        maxVideos,
+        sourceId: source.id,
+        titleIncludes: source.youtubeTitleIncludes,
+      });
+      videoIds = filterVideosBySource(videoIds, provider, source);
+      listTimer.done(`${source.id} via yt-dlp`, {
+        sourceId: source.id,
+        method: "yt-dlp",
+        videoCount: videoIds.length,
+      });
+    } else if (source.dateRange && listWithApi) {
       try {
         videoIds = await provider.listChannelVideosSince(channelUrl, {
           since: source.dateRange.since,
@@ -522,19 +535,6 @@ export async function runFetch(argv: string[]): Promise<number> {
           videoCount: videoIds.length,
         });
       }
-    } else if (source.dateRange) {
-      videoIds = listChannelVideosWithYtDlp(channelUrl, {
-        dateRange: source.dateRange,
-        maxVideos,
-        sourceId: source.id,
-        titleIncludes: source.youtubeTitleIncludes,
-      });
-      videoIds = filterVideosBySource(videoIds, provider, source);
-      listTimer.done(`${source.id} via yt-dlp`, {
-        sourceId: source.id,
-        method: "yt-dlp",
-        videoCount: videoIds.length,
-      });
     } else {
       videoIds = await provider.listChannelVideosSince(channelUrl, {
         ...listWindow,

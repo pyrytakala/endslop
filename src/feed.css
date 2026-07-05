@@ -101,3 +101,9 @@ body {
   border-radius: 10px;
   color: #d64550;
 }
+
+@media (max-width: 640px) {
+  .feed {
+    padding-inline: 1rem;
+  }
+}

@@ -11,7 +11,7 @@ export interface DateRange {
 
 export type FetchKind = "youtube" | "essay";
 
-export type EssayFetchAdapter = "paul-graham" | "rss-readability";
+export type EssayFetchAdapter = "paul-graham" | "rss-readability" | "podcast-rss-audio";
 
 export type EssayListingKind =
   | "feed"
@@ -22,7 +22,8 @@ export type EssayListingKind =
   | "machine-theory-journal"
   | "semianalysis-archives"
   | "asterisk-issues"
-  | "collabfund-author";
+  | "collabfund-author"
+  | "stratechery-archive";
 
 export interface SourceConfig {
   id: string;
@@ -187,11 +188,10 @@ export const SOURCES: Record<string, SourceConfig> = {
   "stratechery-h1-2026": essaySource({
     id: "stratechery-h1-2026",
     name: "Stratechery",
-    catalogUrl: "https://stratechery.com/feed/",
-    feedUrl: "https://stratechery.com/feed/",
+    catalogUrl: "https://stratechery.com/2026/",
     coverImage: "/images/covers/stratechery.png",
     dateRange: { since: "20260101", until: "20261231" },
-    listingKind: "feed",
+    listingKind: "stratechery-archive",
     channelName: "Stratechery",
   }),
   "import-ai-h1-2026": essaySource({
@@ -294,6 +294,19 @@ export const SOURCES: Record<string, SourceConfig> = {
     coverImage: "/images/covers/pmf-show.png",
     year: 2026,
     quarter: 2,
+  }),
+  "how-i-built-this-q2-2026": essaySource({
+    id: "how-i-built-this-q2-2026",
+    name: "How I Built This",
+    catalogUrl: "https://rss.art19.com/how-i-built-this",
+    feedUrl: "https://rss.art19.com/how-i-built-this",
+    coverImage: "/images/covers/how-i-built-this.png",
+    dateRange: { since: "20260101", until: "20261231" },
+    listingKind: "feed",
+    channelName: "How I Built This",
+    fetchAdapter: "podcast-rss-audio",
+    contentKind: "podcast",
+    itemLabel: "episodes",
   }),
   "lennys-podcast-q2-2026": quarterlyPodcastSource({
     id: "lennys-podcast-q2-2026",
@@ -410,13 +423,17 @@ export const SOURCES: Record<string, SourceConfig> = {
     year: 2026,
     quarter: 2,
   }),
-  "emily-oster-2026": quarterlyPodcastSource({
+  "emily-oster-2026": essaySource({
     id: "emily-oster-2026",
     name: "ParentData",
-    channelUrl: "https://www.youtube.com/channel/UCbZpfvf0BfHBvEuH8d9Fk9Q/videos",
+    catalogUrl: "https://parentdata.org/feed/",
+    feedUrl: "https://parentdata.org/feed/",
     coverImage: "/images/covers/emily-oster.png",
-    year: 2026,
-    quarter: 2,
+    dateRange: { since: "20260101", until: "20261231" },
+    listingKind: "feed",
+    channelName: "ParentData",
+    contentKind: "podcast",
+    itemLabel: "episodes",
   }),
   "barbell-medicine-2026": quarterlyPodcastSource({
     id: "barbell-medicine-2026",

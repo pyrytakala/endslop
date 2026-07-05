@@ -351,6 +351,60 @@ export async function listSemianalysisArchives(context: ListingContext): Promise
   return filterListedItems(context, items, true);
 }
 
+export async function listStratecheryArchive(context: ListingContext): Promise<ContentListItem[]> {
+  const year = context.dateRange?.since?.slice(0, 4) ?? new Date().getFullYear().toString();
+  const items: ContentListItem[] = [];
+  const seen = new Set<string>();
+
+  for (let page = 1; page <= 30; page += 1) {
+    const pagePath = page === 1 ? `/${year}/` : `/${year}/page/${page}/`;
+    const pageUrl = new URL(pagePath, "https://stratechery.com").href;
+    let html: string;
+    try {
+      html = await fetchText(pageUrl);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      if (page > 1 && message.includes("HTTP 404")) {
+        break;
+      }
+      throw error;
+    }
+    let foundNew = 0;
+
+    for (const match of html.matchAll(/href="(https:\/\/stratechery\.com\/\d{4}\/[^"?#]+)"/g)) {
+      const articleUrl = match[1].replace(/\/$/, "");
+      if (articleUrl.includes("/page/")) {
+        continue;
+      }
+
+      const slug = articleUrl.split("/").filter(Boolean).pop() ?? articleUrl;
+      if (seen.has(slug)) {
+        continue;
+      }
+      seen.add(slug);
+
+      items.push({
+        id: slug,
+        title: slug.replace(/-/g, " "),
+        url: articleUrl,
+      });
+      foundNew += 1;
+    }
+
+    if (foundNew === 0) {
+      break;
+    }
+
+    if (context.requestDelayMs > 0) {
+      await sleep(context.requestDelayMs);
+    }
+  }
+
+  items.sort((a, b) => (b.upload_date ?? "").localeCompare(a.upload_date ?? ""));
+
+  return filterListedItems(context, items, true);
+}
+
 export async function listCollabfundAuthor(context: ListingContext): Promise<ContentListItem[]> {
   const html = await fetchText(context.sourceUrl);
   const items: ContentListItem[] = [];

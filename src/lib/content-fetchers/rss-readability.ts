@@ -19,6 +19,7 @@ import {
   listMachineTheoryJournal,
   listOpenAiBlog,
   listSemianalysisArchives,
+  listStratecheryArchive,
   type ListingContext,
 } from "./listings.js";
 import type { ContentFetchContext, ContentFetcher, ContentListItem } from "./types.js";
@@ -48,6 +49,8 @@ async function resolveListing(context: ContentFetchContext): Promise<ContentList
       return listAsteriskIssues(listingContext);
     case "collabfund-author":
       return listCollabfundAuthor(listingContext);
+    case "stratechery-archive":
+      return listStratecheryArchive(listingContext);
     case "feed":
     default:
       if (!context.feedUrl) {

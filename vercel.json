@@ -220,6 +220,14 @@
       "destination": "/source/index.html"
     },
     {
+      "source": "/sources/how-i-built-this-q2-2026",
+      "destination": "/source/index.html"
+    },
+    {
+      "source": "/sources/how-i-built-this-q2-2026/",
+      "destination": "/source/index.html"
+    },
+    {
       "source": "/sources/lennys-podcast-q2-2026",
       "destination": "/source/index.html"
     },
@@ -641,6 +649,16 @@
     {
       "source": "/pmf-show-q2-2026/",
       "destination": "/sources/pmf-show-q2-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/how-i-built-this-q2-2026",
+      "destination": "/sources/how-i-built-this-q2-2026",
+      "permanent": true
+    },
+    {
+      "source": "/how-i-built-this-q2-2026/",
+      "destination": "/sources/how-i-built-this-q2-2026/",
       "permanent": true
     },
     {

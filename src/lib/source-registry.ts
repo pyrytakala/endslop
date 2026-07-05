@@ -3,10 +3,6 @@
  * Not surfaced in the UI — update this when adding or declining a source.
  *
  * Runtime config lives in `sources-config.ts`; this file is the decision log.
- *
- * Policy — audio / Whisper: Do not add How I Built This, download podcast MP3s,
- * or run local Whisper transcription unless the user explicitly requests it.
- * Default pipeline is YouTube (or RSS essays) + TranscriptAPI / Readability only.
  */
 
 export type IncludedSourceEntry = {
@@ -95,13 +91,7 @@ export const SOURCE_REGISTRY: SourceRegistryEntry[] = [
   { status: "included", id: "yc-startup-pod-q2-2026" },
   { status: "included", id: "my-first-million-q2-2026" },
   { status: "included", id: "pmf-show-q2-2026" },
-  {
-    status: "excluded",
-    id: "how-i-built-this-q2-2026",
-    label: "How I Built This",
-    reason:
-      "RSS show notes are too short; full episodes need MP3+Whisper (do not use unless user explicitly requests). No reliable YouTube feed for 2026.",
-  },
+  { status: "included", id: "how-i-built-this-q2-2026", note: "Podcast RSS audio transcribed via Whisper." },
   { status: "included", id: "lennys-podcast-q2-2026" },
   {
     status: "excluded",
@@ -122,7 +112,7 @@ export const SOURCE_REGISTRY: SourceRegistryEntry[] = [
   { status: "included", id: "happiness-lab-2026", note: "Yale wellbeing science with Laurie Santos." },
   { status: "included", id: "good-inside-2026", note: "Dr. Becky Kennedy — parenting and emotional regulation." },
   { status: "included", id: "raising-good-humans-2026", note: "Dr. Aliza Pressman — evidence-based parenting." },
-  { status: "included", id: "emily-oster-2026", note: "ParentData — economist approach to parenting decisions." },
+  { status: "included", id: "emily-oster-2026", note: "ParentData newsletter/podcast via parentdata.org RSS." },
   { status: "included", id: "barbell-medicine-2026", note: "Evidence-based strength training and pain/health." },
   { status: "included", id: "david-burns-2026", note: "David Burns CBT / Feeling Great live therapy sessions." },
   { status: "included", id: "tim-ferriss-2026", note: "Long-form interviews; quality varies by guest." },

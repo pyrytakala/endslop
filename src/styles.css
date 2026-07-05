@@ -891,6 +891,34 @@ body {
     padding-inline: 1rem;
   }
 
+  .list-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+  }
+
+  .list-toolbar .section-meta,
+  .list-toolbar .feed-meta {
+    flex: none;
+    width: 100%;
+  }
+
+  .page-filters {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .page-filters .filter-dropdown-panel {
+    left: 0;
+    right: auto;
+  }
+
+  .filter-dropdown-wrap--sources .filter-dropdown-summary {
+    max-width: none;
+  }
+
   .card {
     grid-template-columns: 1fr;
   }

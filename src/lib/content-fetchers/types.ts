@@ -10,6 +10,7 @@ export interface ContentListItem {
   description?: string | null;
   body?: string | null;
   duration_seconds?: number | null;
+  audioUrl?: string | null;
 }
 
 export interface ContentFetchContext {
